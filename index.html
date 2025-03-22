@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <title>Gallery Search and Zoom</title>
-        <link rel="icon" href="photos/icon.jpg">
+        <link rel="icon" href="photos/icon.jpg" />
         <style>
             * {
                 box-sizing: border-box;
@@ -119,11 +119,34 @@
 
             @media (max-width: 600px) {
                 .img-sm {
-                    width: 45vw;
+                    width: 90vw;
+                    max-width: none;
+                    border-width: 3px;
                 }
 
                 .photo {
-                    width: 48vw;
+                    width: 100%;
+                    max-width: 100%;
+                    margin: 15px 0;
+                }
+
+                .description {
+                    font-size: 16px;
+                }
+
+                input {
+                    width: 80vw;
+                    font-size: 16px;
+                }
+
+                button {
+                    font-size: 16px;
+                    padding: 8px 12px;
+                }
+
+                .img-big {
+                    width: 95vw;
+                    max-width: none;
                 }
             }
         </style>
@@ -181,7 +204,6 @@
                             'photos/photo6.jpg',
                             'Tiểu thư chụp ảnh tết năm 2024 năm cuối cấp 3'
                         ),
-                        
                     ];
                 }
 
